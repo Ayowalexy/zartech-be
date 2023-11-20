@@ -12,7 +12,7 @@ import { PostModule } from '../post/post.module';
     isGlobal: true,
   }),
   PostModule,
-  MongooseModule.forRoot(process.env.MONGO_URI_TEST)],
+  MongooseModule.forRoot('mongodb+srv://seinde4:08032243047@cluster0.vhpfkpf.mongodb.net/?retryWrites=true&w=majority')],
   controllers: [AppController],
   providers: [ConfigService, AppService],
 })
