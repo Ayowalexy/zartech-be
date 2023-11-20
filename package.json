@@ -56,7 +56,7 @@
     "typescript": "^5.1.3"
   },
   "resolutions": {
-    "node": ">=16.20.1"
+    "mongoose": ">=16.20.1"
   },
   "jest": {
     "moduleFileExtensions": [
