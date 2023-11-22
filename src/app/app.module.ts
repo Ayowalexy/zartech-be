@@ -8,11 +8,9 @@ import { PostModule } from '../post/post.module';
 
 
 @Module({
-  imports: [ConfigModule.forRoot({
-    isGlobal: true,
-  }),
+  imports: [ConfigModule.forRoot(),
   PostModule,
-  MongooseModule.forRoot('mongodb+srv://seinde4:08032243047@cluster0.vhpfkpf.mongodb.net/?retryWrites=true&w=majority')],
+  MongooseModule.forRoot(process.env.MONGODB_URI)],
   controllers: [AppController],
   providers: [ConfigService, AppService],
 })
